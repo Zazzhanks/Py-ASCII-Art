@@ -4,7 +4,6 @@ import os
 from picture_to_video import make_video
 import time
 
-
 def get_file_name():
     video_name = os.listdir('video')[0]
     print(video_name)
@@ -17,7 +16,6 @@ def get_audio():
     audio.write_audiofile(f"audio/{video_name.split('.')[0]}.mp3")
 
 def get_frames():
-    
     run = 0
     video_name  = get_file_name()
     vidcap = cv2.VideoCapture(f"video/{video_name}")

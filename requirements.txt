@@ -1,0 +1,5 @@
+moviepy==1.0.3
+natsort==8.1.0
+numpy==1.21.4
+opencv_python==4.5.4.60
+Pillow==9.1.1
