@@ -28,15 +28,14 @@ def get_frames():
 
     for i in range(frame_count):
         run += 1
-        
         cv2.imwrite("images/video_images/image_%d.jpg" % run, image)    
         success, image = vidcap.read()
         print('Saved image ', run)
 
-
 if __name__  == '__main__':
     start_time = time.time()
     get_frames()
+    get_audio()
     from ascii_ import main
     main()
     make_video()
