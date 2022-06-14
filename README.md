@@ -9,12 +9,15 @@
 
 ```sh
 git clone https://github.com/Posterizedsoul/Py-ASCII-Art
+pip install -r requirements.txt
 ```
 
 ## Usage
 
 ```sh
-pip install -r requirements.txt
+Copy your video file in 'video' folder \n
+cd src \n
+python video_to_ASCII.py
 ```
 
 ## Author
