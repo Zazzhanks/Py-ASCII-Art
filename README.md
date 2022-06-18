@@ -15,7 +15,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```sh
-Copy your video file in 'video' folder 
+||"Copy your video file in 'video' folder"|| 
 cd src 
 python video_to_ASCII.py
 ```
