@@ -5,8 +5,8 @@
 
 <b> Generate stunning ASCII styled video with Blazingly fast speed using python.</b>
 
-## Install
-
+## Installation
+> Make sure to install python 
 ```sh
 git clone https://github.com/Posterizedsoul/Py-ASCII-Art
 pip install -r requirements.txt
