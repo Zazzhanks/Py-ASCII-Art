@@ -15,12 +15,10 @@ oneCharHeight = 16
 
 def getChar(inputInt):
     return charArray[(math.floor(inputInt*interval))]
-# text_file = open("src/Output.txt", "w")
+
 def picture_to_ascii(picture):
     # print(video_name)
     im = Image.open(f'images/video_images/{picture}')
-    # print(f'images/video_images/{video_name[i]}')
-    # text_file = open('src/Output.txt', 'w')
     fnt = ImageFont.truetype('fonts\SpaceMono-Regular.ttf', 15)
     width, height = im.size
     im = im.resize((int(scaleFactor*width), int(scaleFactor*height*(oneCharWidth/oneCharHeight))), Image.NEAREST)
@@ -36,7 +34,6 @@ def picture_to_ascii(picture):
             pix[j, i] = (h, h, h)
             # text_file.write(getChar(h))
             d.text((j*oneCharWidth, i*oneCharHeight), getChar(h), font = fnt, fill = (r, g, b))
-        # text_file.write('\n')
     
     outputImage.save(f"images/ascii_images/ascii_{picture}")
     print(f"images/ascii_images/ascii_{picture}")
