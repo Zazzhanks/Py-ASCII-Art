@@ -12,10 +12,7 @@ def make_video():
   fourcc = cv2.VideoWriter_fourcc(*'mp4v')
   
   video = cv2.VideoWriter('video.mp4', fourcc, 24, (3072, 1728))
-  # Alternative solution but doesn't work on linux for some reason 
-  # file_names = sorted(os.listdir())
-  # file_names.sort(key=lambda f: int(''.join(filter(str.isdigit, f))))
-  # print(file_names)
+
 
   for j in natsort.natsorted(os.listdir()):
       img = cv2.imread(j)
